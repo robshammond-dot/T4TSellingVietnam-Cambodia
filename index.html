@@ -361,7 +361,10 @@ footer{
   .print-btn{display:none;}
   details.acc summary:after{display:none;}
   details.acc .acc-body{display:block;}
-  details.acc, table, .callout, .tag-card, .map-figure{break-inside:avoid; page-break-inside:avoid;}
+  .callout, .tag-card, .map-figure, tr, details.acc summary{break-inside:avoid; page-break-inside:avoid;}
+  details.acc, .acc-body, table{break-inside:auto; page-break-inside:auto;}
+  .section-title, h4, .region-label, caption, details.acc summary{break-after:avoid; page-break-after:avoid;}
+  .card{break-inside:auto; page-break-inside:auto;}
 }
 
 .region-label{font-family:'Space Mono', monospace; text-transform:uppercase; letter-spacing:1.5px; font-size:12px; color:var(--navy); font-weight:700; margin:20px 0 10px 0;}
